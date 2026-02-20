@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ubi-Sense Lab</title>
+    <title> ユビキタスセンシング研究室 on Ubi-Sense Lab</title>
     <link>https://example.org/</link>
-    <description>Recent content on Ubi-Sense Lab</description>
+    <description>Recent content in  ユビキタスセンシング研究室 on Ubi-Sense Lab</description>
     <generator>Hugo</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Thu, 05 Feb 2026 16:34:18 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 20 Feb 2026 17:56:48 +0900</lastBuildDate>
     <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hello</title>
-      <link>https://example.org/posts/hello/</link>
-      <pubDate>Thu, 05 Feb 2026 16:34:18 +0900</pubDate>
-      <guid>https://example.org/posts/hello/</guid>
-      <description></description>
+      <title>2026/02/18 修論審査会が開催されました</title>
+      <link>https://example.org/posts/2026-02-18-master-thesis-defense/</link>
+      <pubDate>Fri, 20 Feb 2026 17:56:48 +0900</pubDate>
+      <guid>https://example.org/posts/2026-02-18-master-thesis-defense/</guid>
+      <description>&lt;p&gt;2026年2月17，18日に工学院大学大学院工学研究科情報学専攻の修論審査会が開催されました．ユビキタスセンシング研究室のメンバーは全員2月18日に発表しました．4名とも良い発表をしてくれました．発表お疲れさまでした．&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
