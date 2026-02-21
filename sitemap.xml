@@ -2,6 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://ubi-sense-lab.github.io/lab-web/research/</loc>
+  </url><url>
     <loc>https://ubi-sense-lab.github.io/lab-web/</loc>
     <lastmod>2026-02-20T17:56:48+09:00</lastmod>
   </url><url>
@@ -30,8 +32,6 @@
     <loc>https://ubi-sense-lab.github.io/lab-web/members/</loc>
   </url><url>
     <loc>https://ubi-sense-lab.github.io/lab-web/publications/</loc>
-  </url><url>
-    <loc>https://ubi-sense-lab.github.io/lab-web/research/</loc>
   </url><url>
     <loc>https://ubi-sense-lab.github.io/lab-web/tags/</loc>
   </url><url>
