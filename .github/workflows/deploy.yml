@@ -1,0 +1,56 @@
+name: Build from ubi-sense-lab-site and deploy to Pages
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # このリポジトリ（lab-web）自体をcheckout（Pages権限のため）
+      - name: Checkout (lab-web)
+        uses: actions/checkout@v4
+
+      # ソース（ubi-sense-lab-site）をcheckoutしてビルドする
+      - name: Checkout source (ubi-sense-lab-site)
+        uses: actions/checkout@v4
+        with:
+          repository: ubi-sense-lab/ubi-sense-lab-site
+          path: site
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "latest"
+          extended: true
+
+      - name: Build
+        working-directory: site
+        run: hugo --minify
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    steps:
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
